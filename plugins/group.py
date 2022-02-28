@@ -17,9 +17,9 @@ async def left(client,message):
 						fromt = i
 					if list[i] == translation.dest:
 						to = i 
-				await message.reply_text(f"Translated from **{fromt.capitalize()}** To **{to.capitalize()}**\n\n```{translation.text}```")
+				await message.reply_text(f"\n\n```{translation.text}```")
 			except:
-			   	await message.reply_text(f"Translated from **{translation.src}** To **{translation.dest}**\n\n```{translation.text}```")
+			   	await message.reply_text(f"\n\n```{translation.text}```")
       			
 				
 			
